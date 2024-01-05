@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header id="top">
+      <a class="link" href="index.html"><h2 class="cinzel">Home</h2></a>
+      <a class="link" href="advocacy.html"><h2 class="cinzel">Advocacy</h2></a>
+      <a class="link active" href="contacts.html"><h2 class="cinzel">Contacts</h2></a>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main Panel -->
+    <main>
+
+      <!-- Image with Description -->
+      <section class="profile fade-in">
+        <div class="image center">
+          <img src="media/images/me.jpg" alt="Picture of the developer"/>
+        </div>
+        <div class="header cinzel bold center">
+          Contact Me
+        </div>
+        <div class="description lora center">
+          Use my contacts form for all information requests <br>or contact me directly using the contact information below.
+        </div>
+      </section>
+      <!-- End of Image with Description -->
+
+      <!-- Contact Information List -->
+      <section class="contact fade-in">
+        <div class="contact-item">
+          <div class="item-logo">
+            <img src="media/images/linkedin.png" alt="LinkedIn"/>
+          </div>
+          <div class="header bold cinzel">
+            LinkedIn Profile
+          </div>
+          <div class="description lora">
+            Click here to visit my LinkedIn profile.
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="item-logo">
+            <img src="media/images/phone.png" alt="Phone Number"/>
+          </div>
+          <div class="header bold cinzel">
+            Phone Number
+          </div>
+          <div class="description lora">
+            +93 910 973 3777
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="item-logo">
+            <img src="media/images/email.png" alt="Email"/>
+          </div>
+          <div class="header bold cinzel">
+            Email Address
+          </div>
+          <div class="description lora">
+            samjoshuacaballerobusiness@gmail.com
+            <br>
+            streetdevbusiness@gmail.com
+          </div>
+        </div>
+      </section>
+      <!-- End of Contact Information List -->
+
+    </main>
+    <!-- End of Main Panel -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="upper">
+        <div class="contacts">
+          <h2 class="header cinzel bold">
+            Contact Me
+          </h2>
+          <p class="lora">
+            <strong>Email: </strong>samjoshuacaballerobusiness@gmail.com
+            <br>
+            <strong>Contact Number: </strong>+93 910 973 3777
+            <br>
+            <strong>Business Hours: </strong>Monday to Friday | 9:00 AM - 5:00 PM (PHT)
+          </p>
+        </div>
+        <div class="social_media">
+          <h2 class="header cinzel bold">
+            Social Media
+          </h2>
+          <p class="lora">
+            <strong>Facebook: </strong>facebook.com/samjoshuastreet
+            <br>
+            <strong>Instagram: </strong>instagram.com/samjoshuastreet
+            <br>
+            <strong>LinkedIn: </strong>linkedin.com/in/sam-joshua-caballero-171443241
+          </p>
+        </div>
+      </div>
+      <div class="lower">
+        <p class="lora bold">&#169 2024 Sam Joshua Caballero. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Scroll Up Button -->
+    <a class="top" id="scroll-top" href="#top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16" style="background-color: transparent;">
+        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+      </svg>
+    </a>
+    <!-- End of Scroll Up Button -->
+
+    <script>
+    document.addEventListener("scroll", function() {
+      var scrollPosition = window.scrollY;
+    
+      // Adjust the value (200 in this case) to set the scroll position at which the element becomes visible
+      if (scrollPosition > 200) {
+        document.getElementById("scroll-top").classList.add("visible");
+      } else {
+        document.getElementById("scroll-top").classList.remove("visible");
+      }
+    });
+
+    document.getElementById("scroll-top").addEventListener("click", function(event) {
+      event.preventDefault();
+
+      var targetElement = document.getElementById("top"); // The element you want to scroll to
+
+      // Scroll to the top smoothly
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+    </script>
+  </body>
+</html>
